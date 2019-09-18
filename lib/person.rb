@@ -26,16 +26,16 @@ class Person
   end 
 
     def incriment_hygiene
-      @happiness += 1
-      if @happiness >= 10 
-        @happiness = 10 
+      @hygiene += 1
+      if @hygiene >= 10 
+        @hygiene = 10 
     end 
   end 
   
   def decriment_hygiene
-      @happiness -= 1
-      if @happiness <= 0
-        @happiness = 0 
+      @hygiene -= 1
+      if @hygiene <= 0
+        @hygiene = 0 
     end 
   end
 
@@ -82,11 +82,7 @@ class Person
 
 
         #decriment hygiene by 3
-        if @hygiene <= 2
-            @hygiene = 0
-         else 
-            @hygiene -= 3
-         end 
+        3.times do self.decriment_hygiene
 
      return "♪ another one bites the dust ♫"
     end 
@@ -94,8 +90,8 @@ class Person
 
    def call_friend(friend) 
 
-    self.happiness += 3
-    friend.happiness += 3
+    3.times do self.incriment_happiness
+    3.times do friend.incriment_happiness
 
      return "Hi, #{friend.name}! It's #{self.name}. How are you?"
    end 
@@ -106,12 +102,12 @@ class Person
     case topic 
 
     when "politics"
-       friend.happiness -= 1
-       self.happiness -= 1
+       friend.decriment_happiness
+       self.decriment_happiness
         return "blah blah partisan blah lobbyist"
     when "weather"
-        friend.happiness += 1
-        self.happiness += 1
+        friend.incriment_happiness
+        self.incriment_happiness
 
         return "blah blah sun blah rain"
     else 
