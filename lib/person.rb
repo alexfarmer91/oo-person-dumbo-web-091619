@@ -37,6 +37,7 @@ class Person
       @happiness = happiness_level
     end 
   end 
+end 
 
     def incriment_hygiene
       @hygiene += 1
