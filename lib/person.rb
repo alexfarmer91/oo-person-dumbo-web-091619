@@ -94,9 +94,9 @@ end
     def take_bath
 
      if @hygiene >= 7
-        self.hygiene=(10)
+        hygiene=(10)
      else 
-        self.hygiene = (@hygiene + 4)
+        hygiene=(@hygiene + 4)
      end 
 
       return "♪ Rub-a-dub just relaxing in the tub ♫"
