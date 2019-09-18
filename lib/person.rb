@@ -25,14 +25,14 @@ class Person
     end 
   end 
 
-    def incriment_happiness
+    def incriment_hygiene
       @happiness += 1
       if @happiness >= 10 
         @happiness = 10 
     end 
   end 
   
-  def decriment_happiness
+  def decriment_hygiene
       @happiness -= 1
       if @happiness <= 0
         @happiness = 0 
