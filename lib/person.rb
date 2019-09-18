@@ -94,7 +94,9 @@ class Person
    def call_friend(friend) 
 
     3.times do self.incriment_happiness
+  end 
     3.times do friend.incriment_happiness
+  end 
 
      return "Hi, #{friend.name}! It's #{self.name}. How are you?"
    end 
