@@ -2,13 +2,19 @@ class Person
   
     attr_reader :name
     attr_writer
-    attr_accessor :happiness, :bank_account
+    attr_accessor :bank_account
     
     def initialize(name)
       @name = name 
       @bank_account = 25
       @happiness = 8
       @hygiene = 8
+    end 
+    
+    def incriment_happiness
+      @happiness += 1
+      if @happiness >= 10 
+        @happiness = 10 
     end 
     
     def clean?
