@@ -123,7 +123,7 @@ end
     self.happiness=(self.happiness + 3)
     friend.happiness=(friend.happiness + 3)
 
-     return "Hi, #{friend.name}! It's #{self.name}. How are you?"
+     return "Hi #{friend.name}! It's #{self.name}. How are you?"
    end 
 
 
