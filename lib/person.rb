@@ -79,13 +79,16 @@ class Person
 
         #incriment happiness by 2
         2.times do self.incriment_happiness
+      end 
 
 
         #decriment hygiene by 3
         3.times do self.decriment_hygiene
+      end 
 
      return "♪ another one bites the dust ♫"
     end 
+
 
 
    def call_friend(friend) 
