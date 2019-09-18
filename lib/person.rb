@@ -17,6 +17,13 @@ class Person
         @happiness = 10 
     end 
   end 
+  
+  def decriment_happiness
+      @happiness -= 1
+      if @happiness <= 0
+        @happiness = 0 
+    end 
+  end 
     
     def clean?
       if @hygiene > 7
