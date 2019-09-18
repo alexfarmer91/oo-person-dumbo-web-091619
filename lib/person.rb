@@ -39,6 +39,20 @@ class Person
   end 
 end 
 
+  def hygiene=(hygiene_level)
+    @hygiene = hygiene_level
+    if @hygiene >= 10 
+      @hygiene = 10 
+      
+    else if @hygiene <= 0
+      @hygiene = 0
+      
+    else 
+      @hygiene = hygiene_level
+    end 
+  end 
+end
+
     def incriment_hygiene
       @hygiene += 1
       if @hygiene >= 10 
