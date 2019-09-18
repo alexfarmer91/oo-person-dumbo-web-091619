@@ -1,6 +1,6 @@
 class Person 
   
-    attr_reader :name 
+    attr_reader :name, :bank_account
     attr_writer
     attr_accessor :happiness
     
