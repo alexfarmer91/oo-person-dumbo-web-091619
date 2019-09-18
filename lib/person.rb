@@ -1,3 +1,4 @@
+
 class Person 
   
     attr_reader :name, :happiness, :hygiene
@@ -95,11 +96,8 @@ end
 
     def take_bath
 
-     if @hygiene >= 7
-        self.hygiene=(10)
-     else 
-        self.hygiene=(self.hygiene + 4)
-     end 
+        self.hygiene=(self.hygiene() + 4)
+
 
       return "♪ Rub-a-dub just relaxing in the tub ♫"
     end
