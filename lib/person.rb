@@ -120,10 +120,8 @@ end
 
    def call_friend(friend) 
 
-    3.times do self.incriment_happiness
-  end 
-    3.times do friend.incriment_happiness
-  end 
+    self.happiness=(self.happiness + 3)
+    friend.happiness=(friend.happiness + 3)
 
      return "Hi, #{friend.name}! It's #{self.name}. How are you?"
    end 
@@ -134,12 +132,12 @@ end
     case topic 
 
     when "politics"
-       friend.decriment_happiness
-       self.decriment_happiness
+    self.happiness=(self.happiness - 1)
+    friend.happiness=(friend.happiness - 1)
         return "blah blah partisan blah lobbyist"
     when "weather"
-        friend.incriment_happiness
-        self.incriment_happiness
+    self.happiness=(self.happiness + 1)
+    friend.happiness=(friend.happiness + 1)
 
         return "blah blah sun blah rain"
     else 
