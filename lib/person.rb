@@ -132,8 +132,8 @@ end
     case topic 
 
     when "politics"
-    self.happiness=(self.happiness - 1)
-    friend.happiness=(friend.happiness - 1)
+    self.happiness=(self.happiness - 2)
+    friend.happiness=(friend.happiness - 2)
         return "blah blah partisan blah lobbyist"
     when "weather"
     self.happiness=(self.happiness + 1)
