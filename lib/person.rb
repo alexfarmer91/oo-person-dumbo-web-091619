@@ -106,13 +106,12 @@ end
     def work_out 
 
         #incriment happiness by 2
-        2.times do self.incriment_happiness
-      end 
+        self.happiness=(@happiness + 2)
 
 
         #decriment hygiene by 3
-        3.times do self.decriment_hygiene
-      end 
+        self.hygiene=(@hygiene - 3)
+       
 
      return "♪ another one bites the dust ♫"
     end 
