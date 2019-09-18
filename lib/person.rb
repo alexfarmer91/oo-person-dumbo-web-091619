@@ -62,11 +62,7 @@ class Person
     def work_out 
 
         #incriment happiness by 2
-        if @happiness >= 9
-            @happiness = 10
-         else 
-            @happiness += 2
-         end 
+        2.times do self.incriment_happiness
 
 
         #decriment hygiene by 3
