@@ -1,8 +1,8 @@
 class Person 
   
-    attr_reader :name
+    attr_reader :name, :happiness
     attr_writer
-    attr_accessor :bank_account, :happiness
+    attr_accessor :bank_account
     
     def initialize(name)
       @name = name 
@@ -22,6 +22,15 @@ class Person
       @happiness -= 1
       if @happiness <= 0
         @happiness = 0 
+    end 
+  end 
+  
+  def happiness=(happiness_level)
+    @happiness = happiness_level
+    if @happiness >= 10 
+      @happiness = 10 
+    else 
+      @happiness = happiness_level
     end 
   end 
 
