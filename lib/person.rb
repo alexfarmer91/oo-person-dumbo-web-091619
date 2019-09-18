@@ -16,6 +16,7 @@ class Person
       if @happiness >= 10 
         @happiness = 10 
     end 
+  end 
     
     def clean?
       if @hygiene > 7
